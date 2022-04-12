@@ -44,6 +44,13 @@ When working with non-public data, please carefully follow instructions in [Neo4
     sudo tail -100 /var/log/messages
 
 </li>
+<li>In a typical install, you will accept defaults and leave versions for GDS, Bloom, and APOC -- intentionally blank. 
+
+    graphDataScienceVersion:
+    bloomVersion:
+    apocVersion:
+
+</li>
 </ol>
 
 ## Deleting a Deployment
