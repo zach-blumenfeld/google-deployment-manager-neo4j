@@ -15,6 +15,9 @@ resources:
       diskSize: 20
       graphDatabaseVersion: 4.4.5
       installGraphDataScience: No
-      graphDataScienceLicenseKey: None
-      installBloom: No
-      bloomLicenseKey: None
+      graphDataScienceLicenseKey:
+      graphDataScienceVersion:
+      installBloom: Yes
+      bloomLicenseKey:
+      bloomVersion:
+      apocVersion:

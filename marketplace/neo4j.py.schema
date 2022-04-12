@@ -40,6 +40,15 @@ properties:
   bloomLicenseKey:
     type: string
     default: 'None'
+  graphDataScienceVersion:
+    type: string
+    default: 'None'
+  bloomVersion:
+    type: string
+    default: 'None'
+  apocVersion:
+    type: string
+    default: 'None'
 
 outputs:
   deployment:

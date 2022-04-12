@@ -83,11 +83,21 @@ input:
     - name: graphDataScienceLicenseKey
       title: Graph Data Science License Key
       section: neo4j
+    - name: graphDataScienceVersion
+      title: Graph Data Science Version
+      section: neo4j
     - name: installBloom
       title: Install Bloom
       section: neo4j
     - name: bloomLicenseKey
       title: Bloom License Key
       section: neo4j
+    - name: bloomVersion
+      title: Bloom Version
+      section: neo4j
+    - name: apocVersion
+      title: Apoc Version
+      section: neo4j
+
 runtime:
   deployingMessage: Deployment takes several minutes to complete.

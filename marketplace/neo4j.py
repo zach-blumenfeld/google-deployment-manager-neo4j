@@ -16,7 +16,10 @@ def GenerateConfig(context):
             'installGraphDataScience': context.properties['installGraphDataScience'],
             'graphDataScienceLicenseKey': context.properties['graphDataScienceLicenseKey'],
             'installBloom': context.properties['installBloom'],
-            'bloomLicenseKey': context.properties['bloomLicenseKey']
+            'bloomLicenseKey': context.properties['bloomLicenseKey'],
+            'bloomVersion': context.properties['bloomVersion'],
+            'apocVersion': context.properties['apocVersion'],
+            'graphDataScienceVersion': context.properties['graphDataScienceVersion']
         }
     }
     config['resources'].append(deployment)
