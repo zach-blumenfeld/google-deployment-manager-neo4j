@@ -10,12 +10,4 @@ When working with non-public data, please carefully follow instructions in <i>Ne
   It's easiest to deploy that template directly from the Google Cloud Marketplace. The template has some Marketplace specific variables in it.  If deploying outside the marketplace, you probably want to use [simple](simple) instead.
   The same concerns about self-signed certificates apply.
 
-Please note that if you want to enable enterprise features, please copy the default configuration file, and then add license keys.
-
-To deploy this template, please configure gcloud locally and run a script like this:
-
-    ./deploy.sh single-test-deployment my_config_variant
-
-The deploy.sh script is simply passing in the first argument as the deployment name, and the second represents the parameter file variant, such as:
-
-    parameters.my_config_variant.yaml
+For more information, please consult the <i>README.md</i> file in the <i>/simple</i> directory.

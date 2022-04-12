@@ -30,6 +30,22 @@ The script then passes the cluster configuration to GCP and builds your cluster 
 
 To access the cluster, open the [Google Cloud Console](http://cloud.google.com/console), navigate to Compute Engine and pick a node.  You can access the Neo4j Browser on port 7474 of the external (public) IP of that node.
 
+## Working with CA-signed Certificates
+
+When working with non-public data, please carefully follow instructions in [Neo4j SSL Setup - 4.x.pdf](Neo4jSSLSetup-4.x.pdf) to configure a proper CA-signed certificate.  This document links to resources and videos which further clarify configuration.</i>
+
+## Configuration notes
+
+<ol> 
+<li>Graph Data Science (GDS) currently runs on single node instances so even if you specify a license key and GDS version, it will not install on a multi-node cluster.</li>
+<li>By default, the installer will choose the versions of APOC, Bloom, and GDS which are bundled on the server in <i>/labs</i> and <i>/plugins</i> directories specifically.  You can override these configurations explicitly.  For example, v4.4.5 ships with Bloom 2.1.0, which does not open in Neo Desktop.  So you would specify Bloom Version <i>2.1.1</i> in the configuration.</li>
+<li>Installation takes around 4 minutes per machine.  You can check up on progress (and detect errors) with a command like
+        
+    sudo tail -100 /var/log/messages
+
+</li>
+</ol>
+
 ## Deleting a Deployment
 
 To delete the <i>simple-deployment-007</i> deployment you can either run the command below or use the GUI in the [Google Cloud Console](http://cloud.google.com/console).
