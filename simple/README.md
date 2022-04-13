@@ -32,7 +32,7 @@ To access the cluster, open the [Google Cloud Console](http://cloud.google.com/c
 
 ## Working with CA-signed Certificates
 
-When working with non-public data, please carefully follow instructions in [Neo4j SSL Setup - 4.x.pdf](Neo4jSSLSetup-4.x.pdf) to configure a proper CA-signed certificate.  This document links to resources and videos which further clarify configuration.</i>
+When working with non-public data, please carefully follow instructions in [Neo4j SSL Setup - 4.x.pdf](../../azure-resource-manager-neo4j/simple/Neo4jSSLSetup-4.x.pdf) to configure a proper CA-signed certificate.  This document links to resources and videos which further clarify configuration.</i>
 
 ## Configuration notes
 
@@ -46,9 +46,9 @@ When working with non-public data, please carefully follow instructions in [Neo4
 </li>
 <li>In a typical install, you will accept defaults and leave versions for GDS, Bloom, and APOC -- intentionally blank. 
 
-    graphDataScienceVersion:
-    bloomVersion:
-    apocVersion:
+    graphDataScienceVersion: None
+    bloomVersion: None
+    apocVersion: None
 
 </li>
 </ol>
